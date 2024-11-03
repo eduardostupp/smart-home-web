@@ -1,7 +1,3 @@
-Aqui está a versão revisada do README, com melhor estruturação e correções para melhorar a compreensão:
-
----
-
 # Casa Inteligente
 
 Projeto de Programação Orientada a Eventos - Simulação de Casa Inteligente.
