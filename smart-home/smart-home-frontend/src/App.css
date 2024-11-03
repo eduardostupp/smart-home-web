@@ -1,0 +1,121 @@
+/* Ajustes globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.casa {
+  width: 95vw;
+  max-width: 1400px;
+  height: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.casa h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.comodos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Aumentado para mais espaçamento entre os cômodos */
+  padding: 20px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.comodo {
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  padding: 25px; /* Aumentado o padding interno */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-left: 6px solid #3498db;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Mais espaço entre os elementos dentro do cômodo */
+  overflow: hidden;
+}
+
+.comodo h2 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin-bottom: 20px; /* Aumentado o espaçamento abaixo do título */
+}
+
+.dispositivo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px; /* Aumentado o espaçamento entre os elementos do dispositivo */
+  margin-bottom: 20px; /* Mais espaço entre dispositivos */
+  padding: 10px; /* Adicionado padding interno para separar o conteúdo das bordas */
+  background-color: #f9f9f9; /* Adicionado um fundo suave para destacar os dispositivos */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contêiner para botões lado a lado */
+.botao-duplo {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 5px; /* Espaçamento superior opcional */
+}
+
+button {
+  margin: 5px 0;
+  padding: 12px 20px; /* Aumentado o padding dos botões */
+  font-size: 1rem;
+  color: #fff;
+  background-color: #27ae60; /* Verde para os botões */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2ecc71; /* Verde mais claro para hover */
+}
+
+button:active {
+  background-color: #1e8449; /* Verde escuro para estado ativo */
+}
+
+img {
+  max-width: 50px;
+  border-radius: 8px;
+}
+
+.status {
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.status.on {
+  border-color: #27ae60; /* Verde para estado "Ligado" */
+  box-shadow: 0 0 6px rgba(39, 174, 96, 0.6);
+}
+
+.status.off {
+  border-color: #e74c3c; /* Vermelho para estado "Desligado" */
+  box-shadow: 0 0 6px rgba(231, 76, 60, 0.6);
+}
